@@ -4,3 +4,7 @@ This project contains a method as named encryptor.
 // a surnameFormula and a surname then adds the integers at the nameFormula to the chars in the surname index by index and makes a encrypted string  	
 
 And also this project has 8 tests for to check encryptor method.
+
+
+
+[![Build Status](https://app.travis-ci.com/zeynepyavuz1621/myDemoApp.svg?token=ZMqhV2q24uzc7Ls7iyzm&branch=master)](https://app.travis-ci.com/zeynepyavuz1621/myDemoApp)
