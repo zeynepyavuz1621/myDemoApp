@@ -35,7 +35,7 @@ public class AppTest
     {
         assertTrue( true );
     }
-    /*
+    
     // length of nameFormula given unequal with length name, expected return is null
     public void test1_nameFormula_lengthCheck(){
     	
@@ -79,5 +79,5 @@ public class AppTest
         
     	assertTrue(result != null && result[0].equals("bcd") && result[1].equals("BCD"));
     }
-    */    
+        
 }
