@@ -83,7 +83,8 @@ public class App
         	    String surname = req.queryParams("input4");
 
         	    // Call the encryptor method
-        	    String[] result = App.encryptor(nameFormula, surnameFormula, name, surname);
+        	    String[] result_array = App.encryptor(nameFormula, surnameFormula, name, surname);
+        	    String result = "\nEncrypted Name = " + result_array[0] + "\nEnrypted Surname = " + result_array[1];
 
         	    // Prepare the result for the response
         	    Map map = new HashMap();
