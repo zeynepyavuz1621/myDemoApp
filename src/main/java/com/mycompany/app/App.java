@@ -84,7 +84,7 @@ public class App
 
         	    // Call the encryptor method
         	    String[] result_array = App.encryptor(nameFormula, surnameFormula, name, surname);
-        	    String result = "\nEncrypted Name = " + result_array[0] + "\nEnrypted Surname = " + result_array[1];
+        	    String result = "\tEncrypted Name =\t" + result_array[0] + "\t\tEnrypted Surname =\t" + result_array[1];
 
         	    // Prepare the result for the response
         	    Map map = new HashMap();
