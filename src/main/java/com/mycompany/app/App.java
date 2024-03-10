@@ -65,22 +65,22 @@ public class App
          
          post("/compute", (req, res) -> {
         	    // Parse the nameFormula parameter from the HTTP request
-        	    String[] nameFormulaStrings = req.queryParams("nameFormula").split(",");
+        	    String[] nameFormulaStrings = req.queryParams("input1").split(",");
         	    Integer[] nameFormula = new Integer[nameFormulaStrings.length];
         	    for (int i = 0; i < nameFormulaStrings.length; i++) {
         	        nameFormula[i] = Integer.parseInt(nameFormulaStrings[i]);
         	    }
 
         	    // Parse the surnameFormula parameter from the HTTP request
-        	    String[] surnameFormulaStrings = req.queryParams("surnameFormula").split(",");
+        	    String[] surnameFormulaStrings = req.queryParams("input2").split(",");
         	    Integer[] surnameFormula = new Integer[surnameFormulaStrings.length];
         	    for (int i = 0; i < surnameFormulaStrings.length; i++) {
         	        surnameFormula[i] = Integer.parseInt(surnameFormulaStrings[i]);
         	    }
 
         	    // Get the name and surname parameters from the HTTP request
-        	    String name = req.queryParams("name");
-        	    String surname = req.queryParams("surname");
+        	    String name = req.queryParams("input3");
+        	    String surname = req.queryParams("input4");
 
         	    // Call the encryptor method
         	    String[] result = App.encryptor(nameFormula, surnameFormula, name, surname);
